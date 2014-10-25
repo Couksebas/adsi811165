@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Graficos en 2D - (Canvas)</title>
+</head>
+<body>
+	<h1>Graficos en 2D - (Canvas)</h1>
+	<hr>
+
+	<h3>Cuadrado</h3>
+	<canvas id="cuadrado"></canvas>
+	<script>
+	// Cuadrado
+	var	cuadrado = document.getElementById('cuadrado')
+	var cnvs = cuadrado.getContext('2d')
+	cnvs.fillStyle = 'red';
+	cnvs.fillRect(0,0,100,100);
+    </script>
+	<h3>Circulo</h3>
+	<canvas id="circulo"></canvas>
+      </canvas> 
+       <script type="text/javascript">
+        var canvas=document.getElementById("circulo");
+        var cxt1=canvas.getContext("2d");
+        cxt1.fillStyle ="red";
+        cxt1.beginPath();
+        cxt1.arc(60,60,50,0,Math.PI*2,true);
+        cxt1.closePath();
+        cxt1.fill();
+       </script>
+	<h3>Triangulo</h3>
+	<canvas id="triangulo"></canvas>
+	       <script type="text/javascript">
+	       var canvas=document.getElementById("triangulo");
+           var cxt2=canvas.getContext("2d");
+           cxt2.fillStyle="red";
+           cxt2.beginPath();
+           cxt2.moveTo(65,10);
+           cxt2.lineTo(140,140);
+           cxt2.lineTo(10,140);
+           cxt2.closePath();
+           cxt2.fill();
+	       </script>
+	<h3>Texto</h3>
+	<canvas id="texto"></canvas>
+	<script type="text/javascript">
+	       var texto=document.getElementById("texto");
+           var texto = texto.getContext("2d");
+           texto.font = "25pt comic sans"
+           texto.fillStyle = 'red';
+           texto.fillRect(10,10,200,100);
+           texto.fillStyle = 'black';
+	       texto.fillText("hola mundo" ,35,70);
+	       	       </script>
+	<h3>estrella</h3>
+	<canvas id="estrella"></canvas>
+	 <script type="text/javascript">
+	       var canvas=document.getElementById("estrella");
+           var cxt4=canvas.getContext("2d");
+           cxt4.fillStyle="red";
+           cxt4.beginPath();
+           cxt4.moveTo(65,10);
+           cxt4.lineTo(140,140);
+           cxt4.lineTo(10,140);
+           cxt4.lineTo(10,140);
+           cxt4.lineTo(140,10);
+           cxt4.lineTo(10,200);
+           cxt4.closePath();
+           cxt4.fill();
+	       </script>
+</body>
+</html>
