@@ -51,23 +51,28 @@
            texto.fillStyle = 'red';
            texto.fillRect(10,10,200,100);
            texto.fillStyle = 'black';
-	       texto.fillText("hola mundo" ,35,70);
+	       texto.fillText("ADSI" ,35,70);
 	       	       </script>
-	<h3>estrella</h3>
-	<canvas id="estrella"></canvas>
-	 <script type="text/javascript">
-	       var canvas=document.getElementById("estrella");
-           var cxt4=canvas.getContext("2d");
-           cxt4.fillStyle="red";
-           cxt4.beginPath();
-           cxt4.moveTo(65,10);
-           cxt4.lineTo(140,140);
-           cxt4.lineTo(10,140);
-           cxt4.lineTo(10,140);
-           cxt4.lineTo(140,10);
-           cxt4.lineTo(10,200);
-           cxt4.closePath();
-           cxt4.fill();
-	       </script>
+  <h3>Estrella</h3>
+  <canvas id="estrella"></canvas>
+  <script>
+	var Estrella = document.getElementById('estrella')
+  var cnvs5 = estrella.getContext('2d')
+        cnvs5.fillStyle = '#751e53';
+        cnvs5.translate(50, 100);
+        cnvs5.rotate((Math.PI * 1 / 10));
+        for (var i = 5; i--;) {
+        cnvs5.lineTo(0, 50);
+        cnvs5.translate(0, 50);
+        cnvs5.rotate((Math.PI * 2 / 10));
+        cnvs5.lineTo(0, -50);
+        cnvs5.translate(0, -50);
+        cnvs5.rotate(-(Math.PI * 6 / 10));
+    }
+        cnvs5.lineTo(0, 50);
+        cnvs5.closePath();
+        cnvs5.fill();
+        cnvs5.stroke();
+  </script>
 </body>
 </html>
