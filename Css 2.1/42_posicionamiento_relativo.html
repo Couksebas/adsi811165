@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posicionamiento relativo CSS</title>
+	<style>
+		section.padre {
+			border: 2px solid navy;
+			width: 500px;
+			padding: 10px;
+		}
+		article {
+			border:2px solid navy;
+			display: inline-block;
+			height: 80px;
+			line-height: 5em;
+			margin-bottom: 4px;
+			text-align: center;
+			width: 160px;
+		}
+		.caja4 {
+			width:496px;
+		}
+		.relativa {
+			background-color: navy;
+			position: relative;
+			left: 150px;
+			top: 60px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Posicionamiento normal CSS</h1>
+	<section class="padre">
+		<article class="caja1">caja1</article>
+		<article class="caja2">caja2</article>
+		<article class="caja3">caja3</article>
+		<article class="caja4">caja4</article>
+	</section>
+	<h1>Posicionamiento relativa CSS</h1>
+	<section class="padre">
+		<article class="caja1">caja1</article>
+		<article class="relativa">caja2</article>
+		<article class="caja3">caja3</article>
+		<article class="caja4">caja4</article>
+	</section>
+
+</body>
+</html>

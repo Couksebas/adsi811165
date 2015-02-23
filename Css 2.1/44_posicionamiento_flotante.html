@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posicionamiento flotante CSS</title>
+	<style>
+		section.padre {
+			border: 2px solid navy;
+			width: 500px;
+			display: block;
+			padding: 10px;
+		}
+		article {
+			border:2px solid navy;
+			display: block;
+			height: 80px;
+			line-height: 5em;
+			margin-bottom: 4px;
+			text-align: center;
+			width: 160px;
+		}
+		.caja12 {
+			float: right;
+			color: navy;
+		}
+		.absoluto {
+			background-color: navy;
+			position: absolute;
+			left: 340px;
+			top: 430px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Posicionamiento normal CSS</h1>
+	<section class="padre">
+		<article class="caja1">caja1</article>
+		<article class="caja2">caja2</article>
+		<article class="caja3">caja3</article>
+	</section>
+	<h1>Posicionamiento relativa CSS</h1>
+	<section class="padre">
+		<article class="caja12">caja1</article>
+		<article class="caja2">caja2</article>
+		<article class="caja3">caja3</article>
+	</section>
+
+</body>
+</html>
