@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Overflow (Partes sobrantes dentro de un elemento) - CSS</title>
+	<style>
+		html { font-size: 62.2%}
+		body { font: 1.6rem sans-serif; }
+
+		article {
+			border: 2px solid #999;
+			width: 180px;
+			height: 200px;	
+			display: inline-block;
+			margin: 20px;
+			padding: 4px;
+			vertical-align: top;
+		}
+		article h1 {
+			font-size: 2rem;
+			background-color: #ddd;
+			text-align: center;
+		}
+		.uno { overflow: visible;}
+		.dos { overflow: hidden; }
+		.tres{ overflow: scroll}
+	</style>
+</head>
+<body>
+	<h1>Overflow (Partes sobrantes dentro de un elemento) - CSS</h1>
+	<hr>
+	<article class="uno">
+		<h1>Overflow : Visible</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium mollitia, minima sequi harum ut, natus, eum itaque nisi iste quidem facere unde, assumenda reiciendis rem architecto sunt suscipit est?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</article>
+	<article class="dos">
+		<h1>Overflow : Hidden</h1>
+		Illo earum, saepe, doloribus dignissimos error, magnam modi similique dicta ut quae eius placeat enim! Debitis facere rerum pariatur, non in alias dolore vel sapiente, minima ducimus ad neque velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	</article>
+	<article class="tres">
+		<h1>Overflow : Scroll</h1>
+		Laudantium porro id quam quo impedit! Velit architecto dolorum necessitatibus quas cum, molestiae, voluptatibus ipsum voluptates suscipit quasi cupiditate ipsa! Tenetur qui, ullam, dolorem iste at sed aliquid voluptatibus ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</article>
+</body>
+</html>

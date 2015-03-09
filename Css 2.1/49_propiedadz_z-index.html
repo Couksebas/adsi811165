@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Z-Index</title>
+	<style>
+		section {
+			margin: 4px;
+			width: 200px;
+			border: 2px solid black;
+			padding: 10px;
+			font-size: 2.1rem;
+			box-shadow: 20px 40px 30px navy;
+			border-radius: 0px 40px 0px 40px;
+		}
+		.uno {
+			background-color: navy;
+			position: absolute;
+			z-index: 1;
+			top: 100px;
+			left: 400px;
+			color: #FFFFFF;
+
+		}
+		.dos {
+			background-color: white;
+			position: absolute;
+			z-index: 2;
+			top: 150px;
+			left: 500px;
+		}
+		.tres {
+			background-color: black;
+			position: absolute;
+			z-index: 3;
+			top: 200px;
+			left: 600px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<section class ="uno">
+		<h1>1</h1>
+	</section>
+	<section class ="dos">
+		<h1>2</h1>
+	</section>
+	<section class ="tres">
+		<h1>3</h1>
+	</section>
+</body>
+</html>
